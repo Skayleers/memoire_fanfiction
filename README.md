@@ -64,38 +64,6 @@ Il est organisé ainsi:
 - fichier metadata_pls.csv : fichier metadata pour les comparaisons un contre quatre 
 - fichier stoplist.txt : fichier contenant les *stop-words* à prendre en compte lors des prétraitements de pydistinto (vide)
 
-
-### data
-Contient tous les fichiers de données (textes et métadonnées des fanfictions) utilisés lors des différentes analyses.
-
-Il se divise en cinq sous-dossiers : collecte, fusion, pretraitements, classification, txt_pydistinto.
-
-#### *collecte*
-Ce sous-dossier contient tous les fichiers issus du scraping. Ils sont de deux types : 
-- les fichiers CSV contenant les identifiants collectés pour différents tag qui sont désignés sous la forme "ids_nom_abrégé_du_tag.csv" et "ids_nom_abrégé_du_tag2.csv" quand la collecte s'est éffectuée en deux temps.
-- les fichiers contenant les textes et métadonnées des fanfictions des différents tags qui sont désignés sous la forme "nom_abrégé_du_tag_fanfics.csv".
-
-#### *fusion*
-Contient les fichiers issus des premiers prétraitements réalisés à l'aide de "01_preparation&fusion.ipynb".
-
-Les fichiers sous la forme "nom_abrégé_du_tag_fanfics_complet.csv" contiennent les textes des fanfictions et leurs métadonnées où les doublons ont été supprimés et une colonne "tag" à été ajoutée.
-
-Le fichier "fanfics_complet.csv" contient la fusion des précédents fichiers en un.
-
-#### *pretraitements*
-Ce sous-dossier contient les différents CSV contenant les textes et métadonnées des fanfictions à l'issus des différentes étapes de prétraitements.
-- fanfics_clean.csv : textes des fanfictions nettoyé + limite maximale de longueur
-- fanfics_perso.csv : ajout d'une colonne sans les noms des personnages
-- fanfics_tokenised.csv : ajout de colonnes avec les textes tokenisés
-- fanfics_lemmatised.csv : ajout de colonnes avec les textes lemmatisés
-- fanfics_min : limite minimale de longueur
-
-#### *classification*
-Ce sous-dossier contient les fichiers CSV correspondant aux sous-corpus de dev et de test pour la classification automatique.
-
-#### *txt_pydistinto*
-Ce sous-dossier contient les fichiers txt contenant les textes des fanfictions des différents tags.
-
 ### graphes_pydistinto
 Ce dossier contient tous les graphes issus des comparaisons réalisées à l'aide de pydistinto.
 
