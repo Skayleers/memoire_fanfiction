@@ -10,9 +10,6 @@ Les noms des cinq tags étudiés sont souvent mentionnés dans les différents f
 - flt pour *Friends to lovers*
 - etl pour *Enemies to lovers*
 
-## Utilisation de l'IA
-Certaines parties de code ont été réalisées avec l’aide d’outils d’intelligence artificielle mais sont toujours relues et validées avant d'être incluses dans les fichiers du mémoire.
-
 ## Contenu du dépôt
 ### code
 Le dossier "code" contient tous les scripts et portions de code générées et utilisées pour mener à bien ce mémoire.
